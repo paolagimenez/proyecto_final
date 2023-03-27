@@ -36,28 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-h1{
-  font-weight: 500;
-}
-
-h1,nav{
-  width: 600px;
-  padding: 40px !important;
-  color: #344D67;
-}
-
-.botones{
-  background-color:#344D67!important;
-  color: #6ECCAF;
-}
-
-.botones:hover, .btn-active{
-  background-color: #6ECCAF !important;
-  color: #344D67!important;
-  width: fit-content;   
-}
-
-a{
-  color: #6ECCAF !important;
-}

@@ -4,8 +4,18 @@
         flex-direction: column ;
     }
 }
+.container-header{
+    background-color:#ffffffe6;
+    height: 500px;
+}
 
 li{
-    color: blue;
+    color: green;
 }
+
+
+.principal-search{
+    height: 100vh;
+}
+
 

@@ -1,38 +1,27 @@
+import { Link } from "react-router-dom";
+import {Fragment  } from "react";
 import "./Home.css";
-import ListItemHome from "../ListItemHome/ListItemHome";
 import {useState} from 'react';
 
 /* Este componente corresponde a la pagina inicial (la del cuadrado blanco con los botones.
     La navegacion de las hojas secundarias las hacemos en el componente Navegation*/
 
 export default function Home() {
-    /* tanto la variable informacion , como el estado unValor, son ejemploas para mostrar useState como funciona y la diferencia entre estado y props*/
-    let informacion={
-        email:"sjahdkh@kjhdf.com",
-        telefono:6546
-    }
-    /* creamos la variable informacion para demostrar que podemso pasar de un componente a otro informacion de cualquier tipo*/
-    let [unValor,setValor]=useState(true);
-    //array [estado , metodo para cambiar el valor del estado]
-
-    
-    const cambiarValor=()=>{
-        console.log("se cambio el valor de la variable unValor")
-        setValor(false)
-    }
-    return(
-        
-        <header className="bg-primary">
-            <h1 onMouseOver={cambiarValor}>Proyect - Rick & Morty</h1>
-            <nav className="navbar">
-                <ul className="d-flex justify-content-between">
-                    <ListItemHome dato="Characters" otraData={unValor}/>
-                    <ListItemHome dato="Contact" info={informacion}/>
-                
-                    
-                </ul>
-            </nav>
+    return (  
+        <header className = "principal-search d-flex flex-column align-items-center justify-content-center">
+            <div className= "container-header d-flex flex-column justify-content-center">
+                <h1 className = "row justify-content-center">Proyecto - Rick & Morty</h1>
+                <nav className= "row navBar align-items-center">
+                    <ul className = "nav justify-content-center">
+                        <li>
+                            <Link className="btn m-2 p-3 botones" to="/characters">Characters</Link>
+                        </li>
+                        <li>
+                            <Link className="btn m-2 p-3 botones" to="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
         </header>
     )
-}
-
+  }

@@ -2,5 +2,15 @@ ul{
     list-style-type: none;
 }
 header{
-padding: 20px;
+padding: 10px;
 }
+.bg-blue{
+    background-color:#344d67;
+    top: 0%;
+}
+
+.titulo-nav{
+    color: #6ECCAF !important;
+    font-size: 20px;
+}
+

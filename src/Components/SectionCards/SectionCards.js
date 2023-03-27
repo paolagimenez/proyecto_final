@@ -1,13 +1,11 @@
 import Card from "../Card/Card";
 import './SectionCards.css'
 
-import { useState } from "react";
-
 export default function SectionCards({datos}) {
 
    
     return(
-        <section className="section-cards">
+        <section className="section-cards row d-flex">
 
             {datos.map((dato)=>{ return <Card key={dato.id} info={dato}/>})} 
          
